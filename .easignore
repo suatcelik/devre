@@ -1,0 +1,50 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Supabase anahtarları (Faz 5)
+.env
+
+# ---- EAS derlemesine ek olarak gönderilmeyenler ----
+# Sunucu tarafı (veritabanı parolası supabase/.temp içinde); uygulama derlemesi bunlara ihtiyaç duymaz.
+supabase/
+.claude/
+.env.example

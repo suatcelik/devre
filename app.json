@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Devre",
+    "slug": "devre",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tabugoapp.devre"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#2A1B5E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tabugoapp.devre",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 288,
+          "resizeMode": "contain",
+          "backgroundColor": "#2A1B5E"
+        }
+      ],
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#FFD23F"
+        }
+      ],
+      "expo-asset"
+    ],
+    "owner": "tabugoapp",
+    "extra": {
+      "eas": {
+        "projectId": "68182e59-7d69-4848-992d-ce6e6ea5a9b6"
+      }
+    }
+  }
+}
